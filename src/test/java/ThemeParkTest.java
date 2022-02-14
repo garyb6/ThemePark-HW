@@ -48,16 +48,9 @@ public class ThemeParkTest {
         assertEquals(8, themepark.getNumberofAandSs());
     }
 
-
-
-//    @Test
-//    public void canGetList(){
-//        assertEquals(, themepark.getAttractionsAndStalls());
-//    }
-//
 //    @Test
 //    public void canGetAllReviewed(){
-//        assertEquals(, themepark.getAllReviewed());
+//        assertEquals( , themepark.getAllReviewed());
 //    }
 //
 //    @Test

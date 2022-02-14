@@ -24,11 +24,9 @@ public class ThemePark {
         this.attractionsAndStalls.add(drawPoint);
     }
 
-
-//
 //    public ArrayList getAllReviewed() {
-//
 //    }
+
 //
 //    public void visit(Visitor visitor, Attraction attraction) {
 //    }

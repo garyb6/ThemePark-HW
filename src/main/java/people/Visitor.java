@@ -30,7 +30,7 @@ public class Visitor {
         return money;
     }
 
-    public ArrayList<Attraction> getAttractionsList() {
-        return attractionsList;
+    public int getAttractionsList() {
+        return attractionsList.size();
     }
 }
