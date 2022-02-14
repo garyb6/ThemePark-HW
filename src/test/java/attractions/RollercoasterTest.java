@@ -13,16 +13,18 @@ public class RollercoasterTest {
     Visitor visitoroldandshort;
     Visitor visitorjustright;
     Visitor visitoryoungbuttall;
+    Visitor visitortall;
 
 
 
     @Before
     public void setUp() {
         rollerCoaster = new RollerCoaster("Blue Ridge", 10);
-        visitoryoungandshort = new Visitor (10, 144.0, 50.00);
+        visitoryoungandshort = new Visitor (10, 144.00, 50.00);
         visitoroldandshort = new Visitor (25, 142.00, 500.00);
-        visitorjustright = new Visitor (13, 147, 5.00);
-        visitoryoungbuttall = new Visitor(9, 150, 10.00);
+        visitorjustright = new Visitor (13, 178.00, 5.00);
+        visitoryoungbuttall = new Visitor(9, 150.00, 10.00);
+        visitortall = new Visitor(21, 201.00, 100.00);
     }
 
     @Test
@@ -59,4 +61,20 @@ public class RollercoasterTest {
     public void canCheckIfVisitorIsYoungAndShort(){
         assertEquals(false, rollerCoaster.isAllowedTo(visitoryoungandshort));
     }
+
+    @Test
+    public void canGetDefaultPrice(){
+        assertEquals(8.40, rollerCoaster.defaultPrice(), 0.00);
+    }
+
+    @Test
+    public void canChargeVisitorsUnder2M(){
+        assertEquals(8.40, rollerCoaster.priceFor(visitorjustright), 0.00);
+    }
+
+    @Test
+    public void CanChargeVisitorsOver2MDouble(){
+        assertEquals(16.80, rollerCoaster.priceFor(visitortall), 0.00);
+    }
+
 }
