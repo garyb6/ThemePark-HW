@@ -1,5 +1,6 @@
 package people;
 
+import attractions.Dodgems;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -8,6 +9,7 @@ import static org.junit.Assert.assertEquals;
 public class VisitorTest {
 
     Visitor visitor;
+    Dodgems dodgems;
 
     @Before
     public void before(){
@@ -31,6 +33,12 @@ public class VisitorTest {
 
     @Test
     public void attractionsListStartsEmpty(){
-        assertEquals(0, visitor.getAttractionsList());
+        assertEquals(0, visitor.getNumberOfAttractionsList());
+    }
+
+    @Test
+    public void addAttraction(){
+        visitor.addAttraction(dodgems);
+        assertEquals(1, visitor.getNumberOfAttractionsList());
     }
 }

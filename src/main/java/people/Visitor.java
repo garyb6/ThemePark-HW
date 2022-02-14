@@ -30,7 +30,11 @@ public class Visitor {
         return money;
     }
 
-    public int getAttractionsList() {
+    public int getNumberOfAttractionsList() {
         return attractionsList.size();
+    }
+
+    public void addAttraction(Attraction attraction) {
+        this.attractionsList.add(attraction);
     }
 }
