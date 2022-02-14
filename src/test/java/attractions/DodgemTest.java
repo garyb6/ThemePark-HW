@@ -40,4 +40,14 @@ public class DodgemTest {
     public void canGetDefaultPrice(){
         assertEquals(4.50, dodgems.defaultPrice(), 0.00);
     }
+
+    @Test
+    public void canChargeFullPriceToOver12s(){
+        assertEquals(4.50, dodgems.priceFor(visitorold), 0.00);
+    }
+
+    @Test
+    public void CanChargeHalfPriceToUnder12s(){
+        assertEquals(2.25, dodgems.priceFor(visitoryoung), 0.00);
+    }
 }
