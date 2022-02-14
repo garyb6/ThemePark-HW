@@ -1,4 +1,3 @@
-import behaviours.IReviewed;
 import org.junit.Before;
 import org.junit.Test;
 
