@@ -15,7 +15,7 @@ public class Visitor {
         this.age = age;
         this.height = height;
         this.money = money;
-        this.attractionsList = new ArrayList<Attraction>();
+        this.attractionsList = new ArrayList<>();
     }
 
     public int getAge() {

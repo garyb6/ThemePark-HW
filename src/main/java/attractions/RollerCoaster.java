@@ -2,7 +2,7 @@ package attractions;
 
 import people.Visitor;
 
-public class RollerCoaster  extends Attraction implements behaviours.ISecurity, behaviours.IReviewed, behaviours.ITicketed{
+public class RollerCoaster  extends Attraction implements behaviours.IReviewed, behaviours.ISecurity, behaviours.ITicketed{
 
     public RollerCoaster(String name, int rating) {
         super(name, rating);
@@ -25,5 +25,13 @@ public class RollerCoaster  extends Attraction implements behaviours.ISecurity, 
         if (visitor.getHeight() > 200.00) {
             return defaultPrice() * 2;
         } else return defaultPrice();
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public int getRating(){
+        return 0;
     }
 }

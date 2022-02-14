@@ -1,9 +1,9 @@
 package attractions;
 
 public abstract class Attraction {
-    private String name;
-    private int rating;
-    private int visitCount;
+    protected String name;
+    protected int rating;
+    protected int visitCount;
 
     public Attraction(String name, int rating) {
         this.name = name;

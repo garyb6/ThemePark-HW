@@ -19,4 +19,5 @@ public class Dodgems extends Attraction implements behaviours.IReviewed, behavio
             return defaultPrice() / 2;
         } else return defaultPrice();
     }
+
 }

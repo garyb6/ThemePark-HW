@@ -1,4 +1,5 @@
 import attractions.Attraction;
+import attractions.Dodgems;
 import behaviours.IReviewed;
 import people.Visitor;
 import java.util.ArrayList;
@@ -8,22 +9,30 @@ public class ThemePark {
     private ArrayList<behaviours.IReviewed> attractionsAndStalls;
 
     public ThemePark() {
-        this.attractionsAndStalls = new ArrayList<IReviewed>(){
-
-        }
+        this.attractionsAndStalls = new ArrayList<IReviewed>();
     }
 
-    public static ArrayList<IReviewed> getAttractionsAndStalls() {
+    public ArrayList<IReviewed> getAttractionsAndStalls() {
         return attractionsAndStalls;
     }
 
-    public ArrayList getAllReviewed() {
-
+    public int getNumberofAandSs() {
+        return this.attractionsAndStalls.size();
     }
 
-    public void visit(Visitor visitor, Attraction attraction) {
+    public void addDrawPoint(IReviewed drawPoint) {
+        this.attractionsAndStalls.add(drawPoint);
     }
 
-    public ArrayList getAllAllowedFor() {
-    }
+
+//
+//    public ArrayList getAllReviewed() {
+//
+//    }
+//
+//    public void visit(Visitor visitor, Attraction attraction) {
+//    }
+//
+//    public ArrayList getAllAllowedFor() {
+//    }
 }
