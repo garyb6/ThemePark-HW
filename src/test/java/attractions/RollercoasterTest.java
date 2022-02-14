@@ -56,7 +56,7 @@ public class RollercoasterTest {
     }
 
     @Test
-    public void canCheckIfVisitorIsYoungandShort(){
+    public void canCheckIfVisitorIsYoungAndShort(){
         assertEquals(false, rollerCoaster.isAllowedTo(visitoryoungandshort));
     }
 }

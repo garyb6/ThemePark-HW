@@ -10,7 +10,7 @@ public class Playground extends Attraction implements behaviours.ISecurity {
 
     @Override
     public boolean isAllowedTo(Visitor visitor) {
-        if (visitor.getAge() > 15){
+        if (visitor.getAge() >= 16){
             return false;
         } else {return true;}
     }
