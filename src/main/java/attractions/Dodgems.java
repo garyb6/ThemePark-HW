@@ -1,8 +1,22 @@
 package attractions;
 
-public class Dodgems extends Attraction implements behaviours.IReviewed {
+import people.Visitor;
+
+public class Dodgems extends Attraction implements behaviours.IReviewed, behaviours.ITicketed {
 
     public Dodgems(String name, int rating) {
         super(name, rating);
+    }
+
+    @Override
+    public double defaultPrice() {
+        return 4.50;
+    }
+
+    @Override
+    public double priceFor(Visitor visitor) {
+        if (visitor.getAge() < 12) {
+            return defaultPrice() / 2;
+        } else return defaultPrice();
     }
 }
