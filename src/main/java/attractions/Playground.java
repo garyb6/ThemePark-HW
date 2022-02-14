@@ -2,7 +2,7 @@ package attractions;
 
 import people.Visitor;
 
-public class Playground extends Attraction implements behaviours.ISecurity {
+public class Playground extends Attraction implements behaviours.ISecurity, behaviours.IReviewed {
 
     public Playground(String name, int rating) {
         super(name, rating);
