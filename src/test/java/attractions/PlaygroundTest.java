@@ -14,7 +14,7 @@ public class PlaygroundTest {
     @Before
     public void setUp() throws Exception {
         playground = new Playground("Fun Zone", 7);
-        visitoryoung = new Visitor (14, 144.0, 50.00);
+        visitoryoung = new Visitor (10, 144.0, 50.00);
         visitorold = new Visitor (25, 201.00, 500.00);
     }
 
